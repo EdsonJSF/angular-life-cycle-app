@@ -1,5 +1,6 @@
 import {
   AfterContentChecked,
+  AfterContentInit,
   AfterViewChecked,
   AfterViewInit,
   Component,
@@ -20,6 +21,7 @@ export class Pagina1Component
     OnInit,
     OnChanges,
     DoCheck,
+    AfterContentInit,
     AfterContentChecked,
     AfterViewInit,
     AfterViewChecked,
@@ -36,6 +38,11 @@ export class Pagina1Component
 
   ngDoCheck(): void {
     // console.log("ngDoCheck");
+    return;
+  }
+
+  ngAfterContentInit(): void {
+    // console.log("ngAfterContentInit");
     return;
   }
 
